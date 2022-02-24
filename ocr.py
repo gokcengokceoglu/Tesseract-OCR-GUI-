@@ -80,6 +80,6 @@ def async_detect_document(gcs_source_uri, gcs_destination_uri):
     print('Full text:\n')
     print(annotation['text'])
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'C:\\gokcen\\NONWESTLIT\\ServiceAccountToken.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'ServiceAccountToken.json'
 
 async_detect_document("gs://bucket_ocr_turing_paper_deneme/1948-intelligent-machinery.pdf", "gs://bucket_ocr_turing_paper_deneme/1948-intelligent-machinery_ocr.pdf")
